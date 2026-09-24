@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CS School Sports</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#top" aria-label="CS School Sports home">
+        <span class="brand-mark">CS</span>
+        <span><strong>CS SCHOOL</strong><small>SPORTS</small></span>
+      </a>
+      <div class="header-badge"><span class="live-dot"></span> SCOREBOARD</div>
+    </div>
+  </header>
+
+  <main id="top" class="page-shell">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">2024–25 ATHLETICS</p>
+        <h1>Cheer on our teams.</h1>
+        <p class="hero-copy">Follow the latest scores, schedules, and results from CS School athletics.</p>
+      </div>
+      <div class="hero-icon" aria-hidden="true">🏆</div>
+    </section>
+
+    <nav class="sport-tabs" aria-label="Sports">
+      <button class="sport-tab active" data-sport="all">All sports</button>
+      <button class="sport-tab" data-sport="cross-country">Cross country</button>
+      <button class="sport-tab" data-sport="soccer">Soccer</button>
+      <button class="sport-tab" data-sport="football">Football</button>
+    </nav>
+
+    <section class="content-heading">
+      <div>
+        <p class="eyebrow">GAME CENTER</p>
+        <h2 id="section-title">Latest scores</h2>
+      </div>
+      <span class="updated">Updated today</span>
+    </section>
+
+    <section class="score-grid" id="score-grid" aria-live="polite"></section>
+
+    <section class="empty-state" id="empty-state" hidden>
+      <div>📅</div><h3>No games yet</h3><p>Check back soon for the latest scores.</p>
+    </section>
+
+    <section class="directory">
+      <p class="eyebrow">OUR PROGRAMS</p>
+      <h2>All sports</h2>
+      <div class="program-grid">
+        <button class="program-card" data-sport="cross-country"><span class="program-icon">🏃</span><span><strong>Cross country</strong><small>View results</small></span><b>→</b></button>
+        <button class="program-card" data-sport="soccer"><span class="program-icon">⚽</span><span><strong>Soccer</strong><small>View scores</small></span><b>→</b></button>
+        <button class="program-card" data-sport="football"><span class="program-icon">🏈</span><span><strong>Football</strong><small>View scores</small></span><b>→</b></button>
+      </div>
+    </section>
+  </main>
+  <footer><span>CS SCHOOL SPORTS</span><span>GO GREEN • GO GOLD</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
